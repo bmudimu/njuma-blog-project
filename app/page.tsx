@@ -1,7 +1,16 @@
+import HeroCTA from "@/components/sections/HeroCTA";
+import HeroCTAKPIImage from "@/components/sections/HeroCTAImage";
+import HeroCTAKPIs from "@/components/sections/HeroCTAKPIs";
+import ProjectsSection from "@/components/sections/ProjectsSection";
+import BlogSection from "@/components/sections/BlogSection";
+
+
 // app/page.tsx
 export default function HomePage() {
   return (
-    <section className="flex flex-col gap-8 py-4">
+    <>
+    <HeroCTA />
+    {/* <section className="flex flex-col gap-8 py-4">
       <div className="max-w-2xl space-y-4">
         <p className="text-md uppercase tracking-[0.2em] text-sky-400">
           Data · Code · Growth
@@ -62,6 +71,13 @@ export default function HomePage() {
           this is where you can see how I think and what I build.
         </p>
       </div>
-    </section>
+    </section> */}
+    {/* <HeroCTAKPIs /> */}
+    
+      <ProjectsSection/>
+    
+    {/* <HeroCTAKPIImage /> */}
+    <BlogSection />
+    </>
   );
 }
